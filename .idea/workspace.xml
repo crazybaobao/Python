@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="befab0b9-4625-43aa-bec8-bcd49bfe613d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/static/article_img/list/1.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/article_img/list/2.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/article_img/list/3.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/article_img/list/4.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/list-3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Python/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Python/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/article_img/2018/12/25/SPDL7376.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/show.html" beforeDir="false" />
-    </list>
+    <list default="true" id="befab0b9-4625-43aa-bec8-bcd49bfe613d" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,8 +92,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="448">
-              <caret line="28" column="41" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
+            <state relative-caret-position="432">
+              <caret line="27" column="42" lean-forward="true" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
               <folding>
                 <element signature="n#style#0;n#a#0;n#h1#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -280,8 +267,8 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="85" />
-    <option name="y" value="34" />
+    <option name="x" value="189" />
+    <option name="y" value="149" />
     <option name="width" value="1758" />
     <option name="height" value="975" />
   </component>
@@ -727,7 +714,7 @@
       <workItem from="1545873683247" duration="42000" />
       <workItem from="1545876469008" duration="398000" />
       <workItem from="1545876917179" duration="562000" />
-      <workItem from="1545877519890" duration="35723000" />
+      <workItem from="1545877519890" duration="36052000" />
     </task>
     <task id="LOCAL-00001" summary="更新静态文件">
       <created>1545889626661</created>
@@ -771,7 +758,14 @@
       <option name="project" value="LOCAL" />
       <updated>1545973724377</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="添加Python分页">
+      <created>1545982160999</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1545982160999</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -780,7 +774,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="110936000" />
+    <option name="totallyTimeSpent" value="111265000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -792,7 +786,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="85" y="34" width="1758" height="975" extended-state="0" />
+    <frame x="189" y="149" width="1758" height="975" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1902238" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -828,7 +823,8 @@
     <MESSAGE value="添加装饰器过滤请求方式" />
     <MESSAGE value="测试持续集成" />
     <MESSAGE value="更新数据库" />
-    <option name="LAST_COMMIT_MESSAGE" value="更新数据库" />
+    <MESSAGE value="添加Python分页" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加Python分页" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/templates/base.html">
@@ -1167,8 +1163,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="28" column="41" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
+        <state relative-caret-position="432">
+          <caret line="27" column="42" lean-forward="true" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
           <folding>
             <element signature="n#style#0;n#a#0;n#h1#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
