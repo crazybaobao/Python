@@ -14,11 +14,10 @@ from .models import Article
 
 
 # 首页
-@ask_method(['GET,POST'])
+@ask_method(['GET', 'POST'])
 def index(request):
     allcategory = Category.objects.all()
     context = {'allcategory': allcategory, }
-    print(locals())
     return render(request, 'index.html', locals())
 
 
