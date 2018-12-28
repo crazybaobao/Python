@@ -12,6 +12,7 @@ from django.contrib.auth.models import User
 
 from .models import Article
 
+
 # 首页
 @ask_method(['GET,POST'])
 def index(request):
