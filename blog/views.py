@@ -21,9 +21,9 @@ def index(request):
     return render(request, 'index.html', locals())
 
 
-# 列表页
-def list(request, lid):
-    pass
+# Python页
+def list_3(request):
+    return render(request, 'list-3.html')
 
 
 # 内容页
