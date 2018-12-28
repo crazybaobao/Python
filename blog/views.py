@@ -43,4 +43,4 @@ def search(request):
 
 # 关于我们
 def about(request):
-    pass
+    return render(request, 'about.html')
