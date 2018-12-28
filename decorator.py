@@ -3,6 +3,8 @@
 
 import time
 
+from django.http import HttpResponse
+
 
 def dec(func):
     def wrapper(*args, **kwargs):
@@ -23,4 +25,13 @@ def test1():
     return sum
 
 
-test1
+def ask_method(list_for_method):
+    def outer(func):
+        def inner(request, *args, **kwargs):
+            if request.method not in list_for_method:
+                return HttpResponse("本站只接受{}请求".format(''.join(list_for_method)))
+            return func(request, *args, **kwargs)
+
+        return inner
+
+    return outer
