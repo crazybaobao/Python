@@ -5,8 +5,8 @@
     <title>运维</title>
 </head>
 <body>
-        <div class="breadcrumb">您的位置： <a itemprop="breadcrumb" href="/">首页</a> » <span class="current">运维</span>
-        </div>
+<div class="breadcrumb">您的位置： <a itemprop="breadcrumb" href="/">首页</a> » <span class="current">运维</span>
+</div>
 <table width="1000" border="0">
     <tr>
         <td colspan="2"><font size="3" color="black"><h1>运维</h1></font>
@@ -16,19 +16,26 @@
     <tr>
 
         <td style="background-color:#eeeeee;height:200px;width:400px;">
-            supervisor启停：<br>
-            supervisorctl -u 用户名 -p 密码 start 应用名<br>
-            supervisorctl -u 用户名 -p 密码 stop 应用名<br><br>
+            <p>【shell】<br>
+                强制查杀应用进程
+                sc queryex 应用名
+                taskkill /pid xxx /f /t</p>
+            <p>【supervisor】<br>
+                supervisor启停：<br>
+                supervisorctl -u 用户名 -p 密码 start 应用名<br>
+                supervisorctl -u 用户名 -p 密码 stop 应用名</p>
 
-            查看nginx进程是否存在：<br>
-            ps -ef | grep nginx<br><br>
+            <p>【nginx】<br>
+                查看nginx进程是否存在：ps -ef | grep nginx<br>
+                nginx配置语法检查：/usr/local/nginx/sbin/nginx -t<br>
+                nginx重载：nginx -s reload</p>
 
-            nginx配置语法检查：<br>
-            /usr/local/nginx/sbin/nginx -t<br><br>
-
-            nginx重载：<br>
-            nginx -s reload<br><br>
-
+            <p>【docker】<br>
+                查看镜像：docker images<br>
+                删除镜像：docker rmi 【image id】<br>
+                删除容器：docker rm 【container id】<br>
+                查看所有容器：docker ps -a<br>
+                docker启动tomcat：docker run --name tomcat -p 8888:8080 tomcat:8.0</p>
         </td>
     </tr>
 
