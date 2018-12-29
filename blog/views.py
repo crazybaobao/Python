@@ -26,14 +26,14 @@ def list_3(request):
     return render(request, 'list-3.html')
 
 
-# 内容页
-def show(request, sid):
-    pass
+# 运维页
+def show_ops(request):
+    return render(request, 'html-5.html')
 
 
-# 标签页
-def tag(request, tag):
-    pass
+# 日记页
+def show_daily(request):
+    return render(request, 'list-6.html')
 
 
 # 搜索页

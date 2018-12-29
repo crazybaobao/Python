@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>运维</title>
+</head>
+<body>
+        <div class="breadcrumb">您的位置： <a itemprop="breadcrumb" href="/">首页</a> » <span class="current">运维</span>
+        </div>
+<table width="1000" border="0">
+    <tr>
+        <td colspan="2"><font size="3" color="black"><h1>运维</h1></font>
+        </td>
+    </tr>
+
+    <tr>
+
+        <td style="background-color:#eeeeee;height:200px;width:400px;">
+            supervisor启停：<br>
+            supervisorctl -u 用户名 -p 密码 start 应用名<br>
+            supervisorctl -u 用户名 -p 密码 stop 应用名<br><br>
+
+            查看nginx进程是否存在：<br>
+            ps -ef | grep nginx<br><br>
+
+            nginx配置语法检查：<br>
+            /usr/local/nginx/sbin/nginx -t<br><br>
+
+            nginx重载：<br>
+            nginx -s reload<br><br>
+
+        </td>
+    </tr>
+
+</table>
+
+</body>
+</html>

@@ -19,7 +19,6 @@ from django.urls import include
 from django.urls import re_path
 from django.views.static import serve
 from django.conf import settings
-from django.conf.urls.static import static
 from blog import views
 import os
 
@@ -29,8 +28,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),  # 管理后台
     path('', views.index, name='index'),  # 网站首页
     path('list-3.html/', views.list_3),  # Python页
-    path('show-<int:sid>.html', views.show, name='show'),  # 内容页
-    path('tag/<tag>', views.tag, name='tags'),  # 标签列表页
+    path('list-5.html', views.show_ops),  # 运维页
+    path('list-6.html', views.show_daily),  # 标签列表页
     path('s/', views.search, name='search'),  # 搜索列表页
     path('about/', views.about),  # 联系我们单页
     path('ueditor/', include('DjangoUeditor.urls')),
