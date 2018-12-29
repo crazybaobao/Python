@@ -36,9 +36,9 @@ def show_daily(request):
     return render(request, 'list-6.html')
 
 
-# 搜索页
-def search(request):
-    pass
+# Java页
+def list_2(request):
+    return render(request, 'list-2.html')
 
 
 # 关于我们
