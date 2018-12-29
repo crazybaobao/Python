@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="befab0b9-4625-43aa-bec8-bcd49bfe613d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/html-5.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/html-5.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -99,13 +98,18 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="384">
+              <caret line="36" column="34" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="34" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Python/__init__.py">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -133,11 +137,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/html-5.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="160">
+              <caret line="21" column="43" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
               <folding>
                 <element signature="n#style#0;n#td#0;n#tr#1;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -161,18 +165,6 @@
               <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
               <folding>
                 <element signature="e#46#57#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/manage.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-              <folding>
-                <element signature="e#22#31#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -275,8 +267,8 @@
         <option value="$PROJECT_DIR$/Python/urls.py" />
         <option value="$PROJECT_DIR$/blog/views.py" />
         <option value="$PROJECT_DIR$/templates/list-6.html" />
-        <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/templates/html-5.html" />
+        <option value="$PROJECT_DIR$/templates/index.html" />
       </list>
     </option>
   </component>
@@ -287,8 +279,8 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="473" />
-    <option name="y" value="81" />
+    <option name="x" value="79" />
+    <option name="y" value="13" />
     <option name="width" value="1758" />
     <option name="height" value="1022" />
   </component>
@@ -562,7 +554,7 @@
       <workItem from="1545876917179" duration="562000" />
       <workItem from="1545877519890" duration="39777000" />
       <workItem from="1546063491014" duration="1099000" />
-      <workItem from="1546065860496" duration="5328000" />
+      <workItem from="1546065860496" duration="6224000" />
     </task>
     <task id="LOCAL-00001" summary="更新静态文件">
       <created>1545889626661</created>
@@ -627,7 +619,14 @@
       <option name="project" value="LOCAL" />
       <updated>1546070284448</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="更新运维内容">
+      <created>1546071347867</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1546071347867</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -636,7 +635,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="121417000" />
+    <option name="totallyTimeSpent" value="122313000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -648,8 +647,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="96" y="9" width="1758" height="1022" extended-state="0" />
-    <editor active="true" />
+    <frame x="79" y="13" width="1758" height="1022" extended-state="0" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19493522" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -688,7 +686,8 @@
     <MESSAGE value="添加Python分页" />
     <MESSAGE value="测试" />
     <MESSAGE value="添加运维页" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加运维页" />
+    <MESSAGE value="更新运维内容" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新运维内容" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/site-packages/django/utils/deprecation.py">
@@ -737,9 +736,6 @@
       </provider>
     </entry>
     <entry file="das://758b953a-33ea-44aa-bcdd-abd8410b25d1/schema/main/table/blog_category.sql" />
-    <entry file="file://$PROJECT_DIR$/Python/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="das://758b953a-33ea-44aa-bcdd-abd8410b25d1/schema/main/table/auth_user_user_permissions" />
     <entry file="das://758b953a-33ea-44aa-bcdd-abd8410b25d1/schema/main/table/blog_article" />
     <entry file="das://758b953a-33ea-44aa-bcdd-abd8410b25d1/schema/main/table/blog_article_tags" />
@@ -955,20 +951,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/html-5.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="160">
+          <caret line="21" column="43" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
           <folding>
             <element signature="n#style#0;n#td#0;n#tr#1;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="36" column="34" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="34" />
         </state>
       </provider>
     </entry>
