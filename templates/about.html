@@ -1,6 +1,24 @@
 ﻿<!DOCTYPE HTML>
 <html>
 <head>
+    <script>
+        function allowDrop(ev) {
+            ev.preventDefault();
+        }
+
+        function drag(ev) {
+            ev.dataTransfer.setData("Test", ev.target.id);
+        }
+
+        function drop(ev) {
+            ev.preventDefault();
+            var data = ev.dataTransfer.getData("Text");
+            ev.target.appendChild(document.getElementById(data));
+        }
+
+    </script>
+
+    <title>关于博主</title>
     <style>.container {
         width: 960px;
         height: 600px;
@@ -10,6 +28,10 @@
 </head>
 
 <body>
+
+<canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
+</canvas>
+
 <div id="main-container" class="container">
     <section class="post-left">
         <div class="breadcrumb">您的位置： <a itemprop="breadcrumb" href="/">首页</a> » <span class="current">关于我</span>
@@ -27,8 +49,48 @@
             </div>
 
         </div>
-        <!-- /文章 -->
+        <div id="div1" ondrop="drop(event)"
+             ondragover="allowDrop(event)"></div>
+
+        <img id="drag1" src="/static/images/2.JPG" draggable="true"
+             ondragstart="drag(event)" width="336" height="69">
+
     </section>
 </div>
+
+<img id="scream" src="/static/images/1.JPG" style="visibility: hidden">
+
+
 </body>
+
+<script>
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d"); //启用2d画笔
+    {#ctx.fillStyle = "#FF0000"#}
+    {#ctx.fillRect(0, 0, 150, 75) //绘制矩形#}
+    {#ctx.moveTo(0,0);#}
+    {#ctx.lineTo(200,100);#}
+    {#ctx.stroke();#}
+    {#ctx.beginPath();#}
+    {#ctx.arc(95,50,40,0,2*Math.PI);#}
+    {#ctx.stroke();#}
+
+    ctx.font = "35px Arial";
+    //ctx.fillText("熊本驾到！", 10, 50);
+    ctx.strokeText("熊本在此！", 15, 55)
+    {#var grd = ctx.createLinearGradient(0,0,200,0); //创建线条渐变#}
+    {#grd.addColorStop(0,"red");#}
+    {#grd.addColorStop(1,"white");#}
+
+    var grd = ctx.createRadialGradient(75, 50, 5, 90, 60, 100); //创建线条渐变
+    grd.addColorStop(0, "red");
+    grd.addColorStop(1, "white");
+    ctx.fillStyle = grd;
+    ctx.fillRect(10, 10, 150, 80);
+
+    var img = document.getElementById("scream");
+    ctx.drawImage(img, 10, 10, 100, 100);
+</script>
+
+
 </html>
