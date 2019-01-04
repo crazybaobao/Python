@@ -20,6 +20,7 @@
                 强制查杀应用进程
                 sc queryex 应用名
                 taskkill /pid xxx /f /t</p>
+
             <p>【supervisor】<br>
                 supervisor启停：<br>
                 supervisorctl -u 用户名 -p 密码 start 应用名<br>
@@ -36,6 +37,16 @@
                 删除容器：docker rm 【container id】<br>
                 查看所有容器：docker ps -a<br>
                 docker启动tomcat：docker run --name tomcat -p 8888:8080 tomcat:8.0</p>
+
+            <p>【git】<br>
+                查看当前git版本：git --version<br>
+                强制拉取远程仓库覆盖本地仓库：<br>
+                git fetch --all<br>
+                git reset --hard origin/master<br>
+                git pull<br>
+                git fetch --all && git reset --hard origin/master && git pull（用一条命令）<br>
+
+            </p>
         </td>
     </tr>
 
