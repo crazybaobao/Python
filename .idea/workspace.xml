@@ -270,10 +270,17 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectFrameBounds">
+<<<<<<< Updated upstream
     <option name="x" value="235" />
     <option name="y" value="75" />
     <option name="width" value="1758" />
     <option name="height" value="1022" />
+=======
+    <option name="x" value="125" />
+    <option name="y" value="24" />
+    <option name="width" value="1758" />
+    <option name="height" value="977" />
+>>>>>>> Stashed changes
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
