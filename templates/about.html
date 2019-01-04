@@ -27,9 +27,9 @@
         }
 
         .scale img {
-            background-size: contain | cover;
-            width: 100%;
-            height: auto;
+            background-size: contain;
+            width: auto;
+            height: 100%;
         }
     </style>
 
@@ -83,7 +83,7 @@
              ondragover="allowDrop(event)"></div>
 
         <img id="drag1" src="/static/images/2.JPG" draggable="true"
-             ondragstart="drag(event)">
+             ondragstart="drag(event)" width="device-width" height="383">
 
     </section>
 </div>
