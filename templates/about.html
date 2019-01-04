@@ -25,6 +25,12 @@
             font-size: 20px;
             padding: 2px 10px 3px 10px;
         }
+
+        .scale img {
+            background-size: contain | cover;
+            width: 100%;
+            height: auto;
+        }
     </style>
 
     <script>
@@ -45,9 +51,7 @@
 
 
     <style>.container {
-        {#width: 800px;#}
-        {#height: 800px;#}
-        background: #f7ecb5;
+    {#width: 800px;#}{#height: 800px;#} background: #f7ecb5;
     }
     </style>
 </head>
@@ -79,7 +83,7 @@
              ondragover="allowDrop(event)"></div>
 
         <img id="drag1" src="/static/images/2.JPG" draggable="true"
-             ondragstart="drag(event)" width="680" height="383">
+             ondragstart="drag(event)" width="device-width" height="383">
 
     </section>
 </div>
