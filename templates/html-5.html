@@ -54,7 +54,7 @@
                 </tr>
                 <tr>
                     <th>6</th>
-                    <th>...</th>
+                    <th>jenkins</th>
                 </tr>
                 </tbody>
             </table>
@@ -63,16 +63,18 @@
 
     <img src="/static/images/3.JPG" class="img-responsive img-circle" alt="Cinque Terre">
 
-    {#    shell问题汇总#}
-    <table border="0" class="table">
-        <caption>【shell】</caption>
+    <table border="0" class="table table-hover table-condensed">
         <thead>
         <tr>
             <th>问题</th>
             <th>解决方法</th>
         </tr>
         </thead>
+        {#    shell问题汇总#}
         <tbody>
+        <tr bgcolor="#87cefa">
+            <td colspan="2">【shell】</td>
+        </tr>
         <tr>
             <td>强制查杀应用进程：</td>
             <td>sc queryex 应用名<br>
@@ -80,18 +82,12 @@
             </td>
         </tr>
         </tbody>
-    </table>
 
-    {#        supervisor问题汇总#}
-    <table class="table table-striped">
-        <caption>【supervisor】</caption>
-        <thead>
-        <tr>
-            <th>问题</th>
-            <th>解决方法</th>
-        </tr>
-        </thead>
+        {#        supervisor问题汇总#}
         <tbody>
+        <tr bgcolor="#87cefa">
+            <td colspan="2">【supervisor】</td>
+        </tr>
         <tr>
             <td>supervisor启停：</td>
             <td>supervisorctl -u 用户名 -p 密码 start 应用名<br>
@@ -99,18 +95,12 @@
             </td>
         </tr>
         </tbody>
-    </table>
 
-    {#        nginx问题汇总#}
-    <table class="table table-bordered">
-        <caption>【nginx】</caption>
-        <thead>
-        <tr>
-            <th>问题</th>
-            <th>解决方法</th>
-        </tr>
-        </thead>
+        {#        nginx问题汇总#}
         <tbody>
+        <tr bgcolor="#87cefa">
+            <td colspan="2">【nginx】</td>
+        </tr>
         <tr>
             <td>查看nginx进程是否存在：</td>
             <td>ps -ef | grep nginx</td>
@@ -124,18 +114,12 @@
             <td>nginx -s reload</td>
         </tr>
         </tbody>
-    </table>
 
-    {#        docker问题汇总#}
-    <table class="table table-hover">
-        <caption>【docker】</caption>
-        <thead>
-        <tr>
-            <th>问题</th>
-            <th>解决方法</th>
-        </tr>
-        </thead>
+        {#        docker问题汇总#}
         <tbody>
+        <tr bgcolor="#87cefa">
+            <td colspan="2">【docker】</td>
+        </tr>
         <tr>
             <td>查看镜像：</td>
             <td>docker images</td>
@@ -157,18 +141,12 @@
             <td>docker run --name tomcat -p 8888:8080 tomcat:8.0</td>
         </tr>
         </tbody>
-    </table>
 
-    {#        git问题汇总#}
-    <table class="table table-condensed">
-        <caption>【git】</caption>
-        <thead>
-        <tr>
-            <th>问题</th>
-            <th>解决方法</th>
-        </tr>
-        </thead>
+        {#        git问题汇总#}
         <tbody>
+        <tr bgcolor="#87cefa">
+            <td colspan="2">【git】</td>
+        </tr>
         <tr>
             <td>查看当前git版本：</td>
             <td>git --version</td>
@@ -182,8 +160,31 @@
             </td>
         </tr>
         </tbody>
-    </table>
 
+        {#    Jenkins问题汇总#}
+        <tbody>
+        <tr bgcolor="#87cefa">
+            <td colspan="2">【jenkins】</td>
+        </tr>
+        <tr>
+            <td>产品1</td>
+            <td>23/11/2013</td>
+        </tr>
+        <tr>
+            <td>产品2</td>
+            <td>10/11/2013</td>
+        </tr>
+        <tr>
+            <td>产品3</td>
+            <td>20/10/2013</td>
+        </tr>
+        <tr>
+            <td>产品4</td>
+            <td>20/10/2013</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
 </div>
 </body>
 </html>
