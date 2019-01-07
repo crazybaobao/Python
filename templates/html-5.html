@@ -3,8 +3,7 @@
 <head>
     <title>运维</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0,
-                                     user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0,shrink-to-fit=no">
     <link rel="stylesheet" href="//apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css">
     {#    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap /3.3.1/css/bootstrap.min.css"/>#}
     <script src="//apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
@@ -12,16 +11,17 @@
 </head>
 
 <body>
-<div class="breadcrumb">您的位置： <a itemprop="breadcrumb" href="/">首页</a> » <span class="current">运维</span>
-</div>
+<div class="container-fluid">
 
-<div class="container">
+    <div class="breadcrumb">您的位置： <a itemprop="breadcrumb" href="/">首页</a> » <span class="current">运维</span>
+    </div>
+
     {#    超大屏幕（Jumbotron）。顾名思义该组件可以增加标题的大小#}
     <div class="jumbotron">
-        <h1>运维</h1>
+        <h3>运维</h3>
         <p>本页记录了工作中遇到的运维方面的知识点</p>
-
     </div>
+
     <div>
         <div class="table-responsive">
             <table class="table table-striped table-bordered">
@@ -63,55 +63,127 @@
 
     <img src="/static/images/3.JPG" class="img-responsive img-circle" alt="Cinque Terre">
 
-
-    <table border="0">
+    {#    shell问题汇总#}
+    <table border="0" class="table">
+        <caption>【shell】</caption>
+        <thead>
         <tr>
-            <td colspan="2"><font size="3" color="black"><h1>运维</h1></font>
+            <th>问题</th>
+            <th>解决方法</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>强制查杀应用进程：</td>
+            <td>sc queryex 应用名<br>
+                taskkill /pid xxx /f /t
             </td>
         </tr>
-
-        <tr>
-
-            <td style="background-color:#eeeeee;height:200px;width:400px;">
-                <p>【shell】</p>
-                <ul>
-                    <li>强制查杀应用进程：</li>
-                    sc queryex 应用名<br>
-                    taskkill /pid xxx /f /t
-                </ul>
-
-                <p>【supervisor】<br>
-                <ol>
-                    supervisor启停：
-                    <li>supervisorctl -u 用户名 -p 密码 start 应用名</li>
-                    <li>supervisorctl -u 用户名 -p 密码 stop 应用名</li>
-                </ol>
-                <p>【nginx】<br>
-                    查看nginx进程是否存在：ps -ef | grep nginx<br>
-                    nginx配置语法检查：/usr/local/nginx/sbin/nginx -t<br>
-                    nginx重载：nginx -s reload</p>
-
-                <p>【docker】<br>
-                    查看镜像：docker images<br>
-                    删除镜像：docker rmi 【image id】<br>
-                    删除容器：docker rm 【container id】<br>
-                    查看所有容器：docker ps -a<br>
-                    docker启动tomcat：docker run --name tomcat -p 8888:8080 tomcat:8.0</p>
-
-                <p>【git】<br>
-                    查看当前git版本：git --version<br>
-                    强制拉取远程仓库覆盖本地仓库：<br>
-                    git fetch --all<br>
-                    git reset --hard origin/master<br>
-                    git pull<br>
-                    git fetch --all && git reset --hard origin/master && git pull（用一条命令）<br>
-
-                </p>
-                </ol>
-            </td>
-        </tr>
-
+        </tbody>
     </table>
 
+    {#        supervisor问题汇总#}
+    <table class="table table-striped">
+        <caption>【supervisor】</caption>
+        <thead>
+        <tr>
+            <th>问题</th>
+            <th>解决方法</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>supervisor启停：</td>
+            <td>supervisorctl -u 用户名 -p 密码 start 应用名<br>
+                supervisorctl -u 用户名 -p 密码 stop 应用名
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+    {#        nginx问题汇总#}
+    <table class="table table-bordered">
+        <caption>【nginx】</caption>
+        <thead>
+        <tr>
+            <th>问题</th>
+            <th>解决方法</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>查看nginx进程是否存在：</td>
+            <td>ps -ef | grep nginx</td>
+        </tr>
+        <tr>
+            <td>nginx配置语法检查：</td>
+            <td>/usr/local/nginx/sbin/nginx -t</td>
+        </tr>
+        <tr>
+            <td>nginx重载：</td>
+            <td>nginx -s reload</td>
+        </tr>
+        </tbody>
+    </table>
+
+    {#        docker问题汇总#}
+    <table class="table table-hover">
+        <caption>【docker】</caption>
+        <thead>
+        <tr>
+            <th>问题</th>
+            <th>解决方法</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>查看镜像：</td>
+            <td>docker images</td>
+        </tr>
+        <tr>
+            <td>删除镜像：</td>
+            <td>docker rmi 【image id】</td>
+        </tr>
+        <tr>
+            <td>删除容器：</td>
+            <td>docker rm 【container id】</td>
+        </tr>
+        <tr>
+            <td>查看所有容器：</td>
+            <td>docker ps -a</td>
+        </tr>
+        <tr>
+            <td>docker启动tomcat：</td>
+            <td>docker run --name tomcat -p 8888:8080 tomcat:8.0</td>
+        </tr>
+        </tbody>
+    </table>
+
+    {#        git问题汇总#}
+    <table class="table table-condensed">
+        <caption>【git】</caption>
+        <thead>
+        <tr>
+            <th>问题</th>
+            <th>解决方法</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>查看当前git版本：</td>
+            <td>git --version</td>
+        </tr>
+        <tr>
+            <td>强制拉取远程仓库覆盖本地仓库：</td>
+            <td> git fetch --all<br>
+                git reset --hard origin/master<br>
+                git pull<br>
+                git fetch --all && git reset --hard origin/master && git pull（用一条命令）
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+</div>
 </body>
 </html>
