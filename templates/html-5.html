@@ -89,10 +89,12 @@
             <td colspan="2">【supervisor】</td>
         </tr>
         <tr>
-            <td>supervisor启停：</td>
-            <td>supervisorctl -u 用户名 -p 密码 start 应用名<br>
-                supervisorctl -u 用户名 -p 密码 stop 应用名
-            </td>
+            <td>supervisor启动：</td>
+            <td>supervisorctl -u 用户名 -p 密码 start 应用名</td>
+        </tr>
+        <tr>
+            <td>supervisor停止：</td>
+            <td>supervisorctl -u 用户名 -p 密码 stop 应用名</td>
         </tr>
         </tbody>
 
@@ -167,8 +169,10 @@
             <td colspan="2">【jenkins】</td>
         </tr>
         <tr>
-            <td>产品1</td>
-            <td>23/11/2013</td>
+            <td>节点机正在访问Jenkins服务器源目录，登录失败: 未知的用户名或错误密码</td>
+            <td>1、先去节点机服务里找到Jenkins agent，在属性里配置.\Administrator<br>
+                2、控制面板——凭据管理器——添加Windows凭据（IP地址，用户名密码）
+            </td>
         </tr>
         <tr>
             <td>产品2</td>
