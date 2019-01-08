@@ -139,8 +139,12 @@
             <td>docker ps -a</td>
         </tr>
         <tr>
-            <td>docker启动tomcat：</td>
+            <td>docker启动容器（第一次），如tomcat：</td>
             <td>docker run --name tomcat -p 8888:8080 tomcat:8.0</td>
+        </tr>
+        <tr>
+            <td>docker启动容器（非首次）：</td>
+            <td>docker start 容器名</td>
         </tr>
         </tbody>
 
@@ -175,16 +179,20 @@
             </td>
         </tr>
         <tr>
-            <td>产品2</td>
-            <td>10/11/2013</td>
+            <td>常用maven编译命令</td>
+            <td>mvn clean package -Dmaven.test.skip=true</td>
         </tr>
         <tr>
-            <td>产品3</td>
-            <td>20/10/2013</td>
+            <td>启动一个django服务</td>
+            <td>BUILD_ID=DONTKILLME nohup python manage.py runserver 0.0.0.0:8090 &</td>
         </tr>
         <tr>
-            <td>产品4</td>
-            <td>20/10/2013</td>
+            <td>启动java服务时设置内存的命令</td>
+            <td>java -jar -Xmx300m -Xms300m 应用名.jar
+                java -jar -Xmx300m -Xms300m 应用名.jar
+                java -Dspring.profiles.active=qa -jar -Xmx300m -Xms300m 应用名.jar
+                java -jar -Xms128m -Xmx256m 应用名.jar --spring.profiles.active=qa
+            </td>
         </tr>
         </tbody>
     </table>
