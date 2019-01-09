@@ -58,7 +58,7 @@ p {
 
 .wrap {
     margin: 0 auto;
-    /*width: 900px;*/
+    width: 900px;
     vertical-align: middle;
 }
 
