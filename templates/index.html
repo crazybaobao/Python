@@ -4,7 +4,7 @@
 <head>
     <title>个人博客</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0,shrink-to-fit=no">
     <link rel="stylesheet" href="//apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css">
     <script src="//apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="//apps.bdimg.com/libs/bootstrap/3.3.0/js/bootstrap.min.js"></script>
@@ -38,7 +38,8 @@
 </head>
 <body>
 <div class="wrap">
-    <h1 id="logo">熊本在线</h1>
+    <h1 id="logo" style="text-shadow: 2px 2px
+ #7276ff;font-size: 50px">熊本在线</h1>
     <ul id="menu">
         <li><a href="/">首页</a></li>
         {% for category in allcategory %}
@@ -106,7 +107,7 @@
     <div class="wrap">
         {#        <div id="copyright">#}
         <p><a title="寻找"
-              href="http://www.baidu.com/" target="_blank"><h1>www.baidu.com</h1></a>
+              href="http://www.baidu.com/" target="_blank" style="text-decoration: none"><h1>www.baidu.com</h1></a>
         </p>
     </div>
     <div class="clear"></div>
