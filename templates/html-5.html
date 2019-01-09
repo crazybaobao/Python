@@ -13,9 +13,10 @@
         body {
             background: #E8F7FC;
             margin: 0 auto;
-            width: 900px;
-            vertical-align: middle;
+        {#width: 900px;#} vertical-align: middle;
+            font-size: 1.5em;
         }
+
     </style>
 </head>
 
@@ -26,9 +27,11 @@
     </div>
 
     {#    超大屏幕（Jumbotron）。顾名思义该组件可以增加标题的大小#}
-    <div class="jumbotron">
-        <h3>运维</h3>
-        <p>本页记录了工作中遇到的运维方面的知识点</p>
+    <div class="jumbotron"
+         style="background-image: url('/static/images/3.JPG');background-repeat: no-repeat;background-position: left top;opacity: 0.6;background-color:transparent;">
+
+        <h1 style="color: orange">运维</h1>
+        <p style="color: orange">本页记录了工作中遇到的运维方面的知识点</p>
     </div>
 
     <div>
@@ -70,9 +73,9 @@
         </div>
     </div>
 
-    <img src="/static/images/3.JPG" class="img-responsive img-circle" alt="Cinque Terre">
+    {#    <img src="/static/images/3.JPG" class="img-responsive img-circle" alt="Cinque Terre">#}
 
-    <table border="0" class="table table-hover table-condensed">
+    <table border="1" class="table table-hover table-condensed">
         <thead>
         <tr>
             <th>问题</th>
@@ -197,15 +200,14 @@
         </tr>
         <tr>
             <td>启动java服务时设置内存的命令：</td>
-            <td>java -jar -Xmx300m -Xms300m 应用名.jar
-                java -jar -Xmx300m -Xms300m 应用名.jar
-                java -Dspring.profiles.active=qa -jar -Xmx300m -Xms300m 应用名.jar
+            <td>java -jar -Xmx300m -Xms300m 应用名.jar<br>
+                java -jar -Xmx300m -Xms300m 应用名.jar<br>
+                java -Dspring.profiles.active=qa -jar -Xmx300m -Xms300m 应用名.jar<br>
                 java -jar -Xms128m -Xmx256m 应用名.jar --spring.profiles.active=qa
             </td>
         </tr>
         </tbody>
     </table>
-</div>
 </div>
 </body>
 </html>
