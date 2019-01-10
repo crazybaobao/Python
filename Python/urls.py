@@ -30,8 +30,9 @@ urlpatterns = [
     path('list-3.html/', views.list_3),  # Python页
     path('list-5.html', views.show_ops),  # 运维页
     path('list-6.html', views.show_daily),  # 日记页
-    path('list-2.html', views.list_2),  # Java页
-    path('about/', views.about),  # 联系我们单页
+    path('list-2.html', views.list_2),  # 手账页
+    path('about/', views.about),  # 关于我单页
     path('ueditor/', include('DjangoUeditor.urls')),
+    path('base.html', views.jenkin),
     re_path('^media/(?P<path>.*)$', serve, {'document_root': settings.MEDIA_ROOT}),
 ]

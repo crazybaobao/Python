@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿{% load staticfiles %}
+
+<!DOCTYPE html>
 <html lang="zh">
 <head>
     <title>运维</title>
@@ -66,7 +68,9 @@
                 </tr>
                 <tr>
                     <th>6</th>
-                    <th>jenkins</th>
+                    <th>
+                        <a href="base.html" style="color: blue">jenkins（可点击）</a>
+                    </th>
                 </tr>
                 </tbody>
             </table>
@@ -210,4 +214,16 @@
     </table>
 </div>
 </body>
+
+<script src="{% static 'js/jquery.min.js' %}"></script>
+
+{#<script>#}
+{#    $("#jenkin").click(function () {#}
+{#        $.get("base.html", function (data, status) {#}
+{#            alert("Data: " + data + "nStatus: " + status);#}
+{#        });#}
+{#    });#}
+{#</script>#}
+
+
 </html>
