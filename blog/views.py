@@ -36,7 +36,7 @@ def show_daily(request):
     return render(request, 'list-6.html')
 
 
-# Java页
+# 手账
 def list_2(request):
     return render(request, 'list-2.html')
 
@@ -44,3 +44,13 @@ def list_2(request):
 # 关于我们
 def about(request):
     return render(request, 'about.html')
+
+
+# Jenkins页
+def jenkin(request):
+    return render(request, 'base.html')
+
+
+# Ruby页
+def rub(request):
+    return render(request, 'ruby.html')

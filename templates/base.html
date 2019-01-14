@@ -1,56 +1,172 @@
-{% load staticfiles %}
 <!DOCTYPE HTML>
-<html>
+<html lang="zh" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
+      xmlns="http://www.w3.org/1999/html">
 <head>
-    <meta charset="UTF-8">
+    <title>jenkins</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0,shrink-to-fit=no">
+    <link rel="stylesheet" href="//apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css">
+    <script src="//apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="//apps.bdimg.com/libs/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
+    <style type="text/css">
+        #image-boarder {
+            width: 900px;
+            padding-left: 14px;
+            padding-top: 20px;
+            border-image: url("/static/images/green_bubbles.jpg") 30 30 round;
+        }
+
+        :target {
+            background-color: yellow;
+        }
+
+    </style>
+
+    <style>
+        input[type="text"]:enabled {
+            background-color: yellow;
+        }
+
+        input[type="text"]:disabled {
+            background-color: purple;
+        }
+    </style>
+
+    <style>
+        img:before {
+            content: attr(alt);
+            display: block;
+            text-align: center;
+            margin-top: 5px;
+        }
+    </style>
+
+    <style>
+        body {
+            counter-reset: myfirst;
+        }
+
+        h4 {
+            counter-reset: mycounter;
+        }
+
+
+        h4:before {
+            counter-increment: myfirst;
+            content: counter(myfirst) '、';
+        }
+
+        h4 {
+            text-shadow: 3px 3px 20px blue;
+            color: black;
+            font-size: 20px;
+            font-weight: bold;
+            font-family: 宋体;
+            background-image: url("/static/images/bottom.jpg");
+            width: 450px;
+            {#height: 45px;#}
+            padding: 30px 0;
+            text-align: center;
+        }
+
+        h5:before {
+            counter-increment: mycounter;
+            content: '第' counter(mycounter, upper-roman) '.';
+            color: blue;
+            font-size: 22px;
+        }
+    </style>
+
+
+    <script>
+        function radio_onchange() {
+            let radio = document.getElementById("radio1");
+            let text = document.getElementById("text_");
+            console.log(radio.checked);
+            if (radio.checked)
+                text.disabled = false;
+            else {
+                text.value = "";
+                text.disabled = true;
+            }
+        }
+    </script>
+
 
 </head>
-<body class="home blog site-layout-2">
-<!-- 头部 -->
-<header class="fix-wrap" id="fix-wrap">
-    <div class="fix-main clearfix pr" id="fix-main" _hover-ignore="1"><a href="/" class="index-logo">
-        <img src="{% static "picture/black-logo.png" %}" alt="拓普Python学院,Python!"></a>
-        <nav class="nav fl">
-            <ul id="fix-list" class="fix-list clearfix">
 
-                <li id="menu-item-24086" class="menu-item"><a href="/">首页</a></li>
+<body>
+<div class="fix-main clearfix pr" id="image-boarder"><a href="/" class="index-logo"></a>
+    <nav class="nav fl">
+        <ul id="fix-list" class="fix-list clearfix">
 
-                {% for category in allcategory %}
-                    <li id="menu-item-117720" class="menu-item">
-                        <a href="{% url 'index' %}list-{{ category.id }}.html">{{ category.name }}</a>
-                    </li>
-                {% endfor %}
+            <li id="menu-item-24086" class="menu-item"><a href="list-5.html">返回</a></li>
 
-                <li id="menu-item-24086" class="menu-item"><a href="/about/">关于博主</a></li>
-            </ul>
-        </nav>
-        <form method="get" class="index-search  hidden-xs" action="/s/">
-            <input class="text" name="search" type="text" placeholder="输入关键字" value="">
-            <button class="submit" type="submit"><i class="fa fa-search"></i></button>
-        </form>
+            {% for category in allcategory %}
+                <li id="menu-item-117720" class="menu-item">
+                    <a href="{% url 'index' %}list-{{ category.id }}.html">{{ category.name }}</a>
+                </li>
+            {% endfor %}
+
+            <li id="menu-item-24086" class="menu-item"><a href="/about/">关于博主</a></li>
+        </ul>
+    </nav>
+    <table border="1" cellpadding="0" cellspacing="0">
+        <tr>
+            <td>A</td>
+            <td>B</td>
+            <td>C</td>
+        </tr>
+        <tr>
+            <td>D</td>
+            <td>E</td>
+            <td></td>
+        </tr>
+    </table>
+
+    Java和Groovy的代码质量分析工具：
+    <a href="#text1">Checkstyle</a>
+    <a href="#text2">PMD/CPD</a>
+
+    <div id="text1">
+        <h4>Checkstyle是一款用于Java的静态分析工具</h4>
+        <h5>小标题</h5>
+        <h5>小标题</h5>
+        <h5>小标题</h5>
+        <p><img src="/static/images/bottom.jpg" alt="粉红圈"/></p>
     </div>
-</header>
 
-{% block content %}
-
-{% endblock %}
-
-<!-- 底部 -->
-<footer class="footer">
-    <div class="copyright"> © 2010- 2018 · All Rights Reserved
-        · <a href="https://www.django.cn">Django中文网</a>
-        · <a href="http://www.miibeian.gov.cn" target="_blank">湘ICP备17023990号</a> 版权所有 © Django中文网
+    <div id="text2">
+        <h4 class="new">PMD是一款非常受欢迎的静态分析工具</h4>
+        <h5>小标题</h5>
+        <h5>小标题</h5>
+        <h5>小标题</h5>
     </div>
-</footer>
-<script src="{% static "js/bundle.js" %}"></script>
-<script type="text/javascript" src="{% static "js/view-history.js" %}"></script>
-<script type='text/javascript' src="{% static "js/push.js" %}"></script>
-<script type='text/javascript' src='{% static "js/jquery.min.js" %}'></script>
-<script type='text/javascript' src='{% static "js/bootstrap.min.js" %}'></script>
-<script type='text/javascript' src='{% static "js/raxus-slider.min.js" %}'></script>
-<script type='text/javascript' src='{% static "js/loader.js" %}'></script>
-<script type='text/javascript' src='{% static "js/bj-lazy-load.min.js" %}'></script>
-<script type='text/javascript' src='{% static "js/os.js" %}'></script>
 
+    <div id="text3">
+        <h4 class="new">FindBugs是一款功能强大的代码质量分析工具，它检查应用程序的字节码来找出一些潜在的bug、性能问题或者差的编码行为</h4>
+        <h5>小标题</h5>
+        <h5>小标题</h5>
+        <h5>小标题</h5>
+    </div>
+
+    <div id="text4">
+        <h4 class="new">CodeNarc是一个用于Groovy代码的静态分析工具，类似于用于Java的PMD</h4>
+        <h5>小标题</h5>
+        <h5>小标题</h5>
+        <h5>小标题</h5>
+    </div>
+
+    <input type="radio" id="radio1" name="radio" onchange="radio_onchange();"/>
+    <label for="radio1">可用</label>
+
+    <input type="radio" id="radio2" name="radio" onchange="radio_onchange();"/>
+    <label for="radio2">不可用</label>
+
+    <input type="text" id="text_" disabled/>
+    <label for="text3">输入框</label>
+
+
+</div>
 </body>
 </html>
