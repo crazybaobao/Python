@@ -34,5 +34,6 @@ urlpatterns = [
     path('about/', views.about),  # 关于我单页
     path('ueditor/', include('DjangoUeditor.urls')),
     path('base.html', views.jenkin),
+    path('ruby.html',views.rub),
     re_path('^media/(?P<path>.*)$', serve, {'document_root': settings.MEDIA_ROOT}),
 ]

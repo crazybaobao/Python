@@ -49,3 +49,8 @@ def about(request):
 # Jenkins页
 def jenkin(request):
     return render(request, 'base.html')
+
+
+# Ruby页
+def rub(request):
+    return render(request, 'ruby.html')
