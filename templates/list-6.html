@@ -7,6 +7,8 @@
     <script src="//apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="//apps.bdimg.com/libs/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
     <style type="text/css">
         #image-boarder {
             margin: 3px;
@@ -89,17 +91,18 @@
     <li>通用选择器（*）</li>
 </ol>
 
+<div id="app">{{ message }}</div>
+
 <div id="image-boarder" class="content">
     <div class="preview">
         <div>示例文字1</div>
         <div>示例文字2</div>
         <div>示例文字3</div>
         <div>示例文字4</div>
-        <a href="#"><img src="images/pic5.jpg" alt="" width="105" height="72"/></a>
-        <a href="#"><img src="images/pic6.jpg" alt="" width="105" height="72"/></a>
-        <a href="#"><img src="images/pic7.jpg" alt="" width="105" height="72"/></a>
-        <a href="#"><img src="images/pic8.jpg" alt="" width="105" height="72"/></a>
     </div>
+    <a href="test.html">跳转测试</a>
+    <a href="#"><img src="images/pic7.jpg" alt="" width="105" height="72"/></a>
+    <a href="#"><img src="images/pic8.jpg" alt="" width="105" height="72"/></a>
     <div class="albums">
         <img src="images/title.gif" alt="" width="219" height="29"/><br/>
         <ul>
@@ -123,12 +126,19 @@
             <li>
                 <button type="button" onclick="read(1)">读取1</button>
             </li>
-            <li><a href="index2.html">about me</a></li>
-            <li><a href="index2.html">news</a></li>
-            <li><a href="index2.html">parters</a></li>
-            <li><a href="index2.html">contacts</a></li>
         </ul>
     </div>
+
+    <pre>
+        &lt;img src="{{ example }}"&gt;
+    </pre>
+    <ul>
+        <li><img src="{% url 'placeholder' width=50 height=50 %}"></li>
+        <li><img src="{% url 'placeholder' width=100 height=50 %}"></li>
+        <li><img src="{% url 'placeholder' width=50 height=100 %}"></li>
+        <li><a href="index2.html">contacts</a></li>
+    </ul>
+
     <blockquote class="pull-right">感谢浏览
         <small>未经允许，请勿转载</small>
     </blockquote>
@@ -145,6 +155,11 @@
         a = storage.getItem(id);
         console.log(a)
     }
+
+    var app = new Vue({
+        el: 'app',
+        data: {message: 'Hello Vue!'}
+    })
 </script>
 
 </body>
