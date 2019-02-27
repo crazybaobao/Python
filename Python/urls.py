@@ -30,13 +30,13 @@ urlpatterns = [
     path('', views.index, name='index'),  # 网站首页
     path('list-3.html', views.list_3),  # Python页
     path('list-5.html', views.show_ops),  # 运维页
-    path('list-6.html', views.show_daily),  # 日记页
+    path('list-6.html', views.show_daily),  # 日记
     path('list-2.html', views.list_2),  # 手账页
     path('about/', views.about),  # 关于我单页
     path('ueditor/', include('DjangoUeditor.urls')),
     path('base.html', views.jenkin),
     path('ruby.html', views.rub),
-    url('test.html', views.djan),
+    url('test.html', views.djan,name='djan'),
     url(r'^goods/(?P<width>[0-9]+)-(?P<height>[0-9]+)/$', views.placeholder, name='placeholder'),
     # url(r'^image/(?P<width>[0-9]+)*(?P<height>[0-9]+)/$', views.placeholder),
     re_path('^media/(?P<path>.*)$', serve, {'document_root': settings.MEDIA_ROOT}),
